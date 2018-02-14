@@ -1,0 +1,21 @@
+body {
+    background: #000000fa;
+    font-family: 'Kavivanar', cursive;
+    color: black;
+    max-width:100%;
+}
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+#gameName {
+    height: 80px;
+}
+.myHeader {
+    height: 50px;
+}
+.mainContent {
+    background-image: url("../images/book2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
