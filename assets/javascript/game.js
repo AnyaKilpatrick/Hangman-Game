@@ -73,7 +73,7 @@ var game = {
     pickImage: function () {
         if (wordDiv.outerText === "shire") {
                 image.setAttribute("src", "assets/images/shire.jpg");
-                audio.setAttribute("src", "assets/audio/shire.mp3");
+                audio.setAttribute("src", "assets/audio/Shire.mp3");
                  //loads new source
                 audio.play();
             }
