@@ -96,13 +96,13 @@ var game = {
             audio.play();
         }
         else if (wordDiv.outerText === "gollum") {
-            image.setAttribute("src", "assets/images/gollum.png");
+            image.setAttribute("src", "assets/images/Gollum.png");
             audio.setAttribute("src", "assets/audio/gollum.mp3");
             audio.load();
             audio.play();
         }
         else if (wordDiv.outerText === "smeagol") {
-            image.setAttribute("src", "assets/images/gollum.png");
+            image.setAttribute("src", "assets/images/Gollum.png");
             audio.setAttribute("src", "assets/audio/gollum.mp3");
             audio.load();
             audio.play();
