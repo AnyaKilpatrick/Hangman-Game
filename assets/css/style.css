@@ -1,6 +1,6 @@
 body {
     background: #000000fa;
-    font-family: 'Kavivanar', cursive;
+    font-family: 'Annie Use Your Telescope', cursive;
     color: black;
     max-width:100%;
 }
@@ -14,8 +14,35 @@ p {
 .myHeader {
     height: 50px;
 }
+
 .mainContent {
     background-image: url("../images/book2.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+#guessedLetters {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 30px;
+}
+/* Styling Current Word */
+#my-word {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+#my-word li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    font-family: 'Fredericka the Great', cursive;
+    font-size:30px;
+    margin: 0;
+    padding: 0 10px;
+}
+#wordForWin {
+    width:100%;
+    font-family: 'Fredericka the Great', cursive;
+    font-size:30px;
 }
