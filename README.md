@@ -13,9 +13,10 @@ Wins: (shows # of times user guessed the word correctly).
 
 When the game starts, the word is displayed like this: _ _ _ _ _ _ _.
 
-As the user guesses the correct letters, it will be revealed : g e _ _ a _ _.
+As the user guesses the correct letters, they will be revealed : g e _ _ a _ _.
 
-Letters Already Guessed: (Letters the user has already guessed. Letters will not repeat if you press them again). 
+Letters Already Guessed: (List of letters the user has already guessed. Letters will not repeat if you press them again).
+
 Number of Guesses Remaining: (shows # of guesses remaining for the user). 
 
-After the user wins/loses the game automatically choose another word and make the user play it.
+After the user wins/loses the game automatically chooses another word and make the user play it.
