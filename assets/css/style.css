@@ -1,5 +1,5 @@
 body {
-    background: #000000fa;
+    background: black;
     font-family: 'Annie Use Your Telescope', cursive;
     color: black;
     max-width:100%;
@@ -46,3 +46,20 @@ p {
     font-family: 'Fredericka the Great', cursive;
     font-size:30px;
 }
+/* Media Queries for Content */
+
+@media screen and (max-width: 992px) {
+    #mainText {
+        max-width: 100%;
+        margin-right:0;
+        margin-left:0;
+    }
+    #bottom {
+        height: 500px;
+        margin-bottom:1.6em;
+    }
+ }
+ @media screen and (max-width: 768px) {
+      #gameName { 
+        max-height: 50px;
+ }

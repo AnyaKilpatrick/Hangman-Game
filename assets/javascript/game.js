@@ -19,7 +19,7 @@ var wordDiv = document.getElementById("wordForWin");
 var game = {
     alphabet: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q" ,"r" ,"s", "t", "u", "v", "w", "x", "y", "z"],
     word: ["shire", "thorin","gendalf", "saruman", "ring", "smaug", "dragon", "gollum","smeagol", "bilbo"],
-    //computer picks random word from game.word array
+    //computer picks random word from game.word Array
     mainTheme: function (){
         audio = new Audio("assets/audio/main-theme(cut).mp3");
         audio.play();
@@ -143,6 +143,12 @@ game.questionImage();
 document.onkeyup = function(event) {
     userLetter = event.key;
     for (var k=0; k < game.alphabet.length; k++){    //set loop so we can check if pressed key (var userLetter) belongs to alphabet, 
+        if (userLetter === game.alphabet[k]) {       // so game will ignore other keys like "Enter","Tab", "Volume" etc
+            var IndexForGuessedLetter = myWord.indexOf(userLetter);
+            var IndexForAlreadyGuessedList = guessedLetters.indexOf(userLetter);
+            console.log (userLetter); //console.log to check if game sensored pressed key
+            game.checkUserGuess();
+                       
             if (IndexForGuessedLetter === -1 && IndexForAlreadyGuessedList === -1) {  // when wrong key is pressed, 
                 attempts-=1;  // we will have minus 1 attempts left (only if this wrong key was pressed the first time);
                 attemptsLeft.innerHTML = attempts;         
