@@ -18,7 +18,7 @@ var wordDiv = document.getElementById("wordForWin");
 //GAME OBJECT
 var game = {
     alphabet: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q" ,"r" ,"s", "t", "u", "v", "w", "x", "y", "z"],
-    word: ["shire", "thorin","gendalf", "saruman", "ring", "smaug", "dragon", "gollum","smeagol", "bilbo"],
+    word: ["shire", "thorin","gandalf", "saruman", "ring", "smaug", "dragon", "gollum","smeagol", "bilbo"],
     //computer picks random word from game.word Array
     mainTheme: function (){
         audio = new Audio("assets/audio/main-theme(cut).mp3");
@@ -83,9 +83,9 @@ var game = {
             audio.load();
             audio.play();
         }
-        else if (wordDiv.outerText === "gendalf") {
-            image.setAttribute("src", "assets/images/gendalf.png");
-            audio.setAttribute("src", "assets/audio/gendalf.mp3");
+        else if (wordDiv.outerText === "gandalf") {
+            image.setAttribute("src", "assets/images/gandalf.png");
+            audio.setAttribute("src", "assets/audio/gandalf.mp3");
             audio.load();
             audio.play();
         }
